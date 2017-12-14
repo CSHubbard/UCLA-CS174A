@@ -1,0 +1,219 @@
+
+		//drawing pikachu (basic standing)
+		{
+		model_transform = identity();
+		model_transform = mult( model_transform, translation(.5,4.25,-4.5) );
+		var temp_center = model_transform;
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, scale(2.5,2.5,2.5) );	
+		this.shapes.Pika_body.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(0,2.5,1.1) );
+		model_transform = mult( model_transform, scale(2,2,2) );	
+		this.shapes.Pika_head.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(2.5,5.5,.75) );
+		model_transform = mult( model_transform, scale(1.5,1.5,1.5) );	
+		this.shapes.Pika_lear.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(-2.5,5.5,.75) );
+		model_transform = mult( model_transform, scale(1.5,1.5,1.5) );	
+		this.shapes.Pika_rear.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(2.1,.75,1) );
+		this.shapes.Pika_larm.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(-2.1,.75,1) );
+		this.shapes.Pika_rarm.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(1.275,-1.66,.37) );
+		model_transform = mult( model_transform, scale(1.5,1.5,1.5) );
+		this.shapes.Pika_lleg.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(-1.14,-1.9,.37) );
+		model_transform = mult( model_transform, scale(1.5,1.5,1.5) );
+		this.shapes.Pika_rleg.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, rotation(-5, 1,0,0) );	
+		model_transform = mult( model_transform, translation(1.4,-4,.4) );
+		model_transform = mult( model_transform, scale(.8,.8,.8) );	
+		this.shapes.Pika_lfoot.draw( graphics_state, model_transform, this.pikachu )
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, rotation(-5, 1,0,0) );	
+		model_transform = mult( model_transform, translation(-1.25,-4,.4) );
+		model_transform = mult( model_transform, scale(.8,.8,.8) );	
+		this.shapes.Pika_rfoot.draw( graphics_state, model_transform, this.pikachu )
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(-1,1.5,-2.80) );
+		model_transform = mult( model_transform, scale(2.5,2.5,2.5) );	
+		this.shapes.Pika_tail.draw( graphics_state, model_transform, this.pikachu_tail );
+		}
+		
+		//bent down
+		{
+		
+		model_transform= identity();
+		model_transform = mult( model_transform, translation(.5,3.5,-4.5) );
+		model_transform = mult( model_transform, rotation(75, 1,0,0));
+		var head_center;
+		var temp_center = model_transform;	
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, scale(2.5,2.5,2.5) );	
+		this.shapes.Pika_body.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, scale(2.5,2.5,2.5) );	
+		this.shapes.Pika_body.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(0,3,.5) );
+		model_transform = mult( model_transform, rotation(-40, 1,0,0));
+		head_center = model_transform;
+		model_transform = mult( model_transform, scale(2,2,2) );	
+		this.shapes.Pika_head.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = head_center;
+		model_transform = mult( model_transform, translation(2.5,3,-.5) );
+		model_transform = mult( model_transform, rotation(15, 0,0,1) );	
+		model_transform = mult( model_transform, scale(1.5,1.5,1.5) );	
+		this.shapes.Pika_lear.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = head_center;
+		model_transform = mult( model_transform, translation(-2.5,3,-.5) );
+		model_transform = mult( model_transform, rotation(-15, 0,0,1) );	
+		model_transform = mult( model_transform, scale(1.5,1.5,1.5) );	
+		this.shapes.Pika_rear.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(1.5,.75,2) );
+		model_transform = mult( model_transform, rotation(-35, 0,1,0) );
+		this.shapes.Pika_larm.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(-1.5,.75,2) );
+		model_transform = mult( model_transform, rotation(35, 0,1,0) );
+		this.shapes.Pika_rarm.draw( graphics_state, model_transform, this.pikachu );
+		
+
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(1.15,-.75,1.1) );
+		model_transform = mult( model_transform, rotation(-45, 1,0,0) );
+		model_transform = mult( model_transform, scale(1.5,1.5,1.5) );
+		this.shapes.Pika_lleg.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(-1.15,-.75,1.1) );
+		model_transform = mult( model_transform, rotation(-45, 1,0,0) );
+		model_transform = mult( model_transform, scale(1.5,1.5,1.5) );
+		this.shapes.Pika_rleg.draw( graphics_state, model_transform, this.pikachu );
+
+		model_transform = temp_center;
+		model_transform = mult( model_transform, rotation(-90, 1,0,0) );
+		model_transform = mult( model_transform, rotation(5, 1,0,0) );	
+		model_transform = mult( model_transform, translation(1.4,-2.85,-1.15) );
+		model_transform = mult( model_transform, scale(.8,.8,.8) );	
+		this.shapes.Pika_lfoot.draw( graphics_state, model_transform, this.pikachu )
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, rotation(-90, 1,0,0) );
+		model_transform = mult( model_transform, rotation(5, 1,0,0) );	
+		model_transform = mult( model_transform, translation(-1.4,-2.85,-1.15) );
+		model_transform = mult( model_transform, scale(.8,.8,.8) );	
+		this.shapes.Pika_rfoot.draw( graphics_state, model_transform, this.pikachu )
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(-2.8,-.75,-4.15) );
+		model_transform = mult( model_transform, rotation(-45, 1,0,0) );
+		model_transform = mult( model_transform, scale(2.5,2.5,2.5) );	
+		this.shapes.Pika_tail.draw( graphics_state, model_transform, this.pikachu_tail );
+		}
+		
+		//arms and head up
+		{
+		model_transform= identity();
+		model_transform = mult( model_transform, translation(.5,4.5,-4.5) );
+		model_transform = mult( model_transform, rotation(15, 1,0,0));
+
+		var head_center;
+		var temp_center = model_transform;
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, scale(2.5,2.5,2.5) );	
+		this.shapes.Pika_body.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, scale(2.5,2.5,2.5) );	
+		this.shapes.Pika_body.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(0,3,.5) );
+		model_transform = mult( model_transform, rotation(-40, 1,0,0));
+		head_center = model_transform;
+		model_transform = mult( model_transform, scale(2,2,2) );	
+		this.shapes.Pika_head.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = head_center;
+		model_transform = mult( model_transform, translation(2.5,3,-.5) );
+		model_transform = mult( model_transform, rotation(15, 0,0,1) );	
+		model_transform = mult( model_transform, scale(1.5,1.5,1.5) );	
+		this.shapes.Pika_lear.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = head_center;
+		model_transform = mult( model_transform, translation(-2.5,3,-.5) );
+		model_transform = mult( model_transform, rotation(-15, 0,0,1) );	
+		model_transform = mult( model_transform, scale(1.5,1.5,1.5) );	
+		this.shapes.Pika_rear.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(1.5,2,2) );
+		model_transform = mult( model_transform, rotation(-35, 0,1,0) );
+		model_transform = mult( model_transform, rotation(-90, 1,0,0) );
+		this.shapes.Pika_larm.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(-1.5,2,2) );
+		model_transform = mult( model_transform, rotation(35, 0,1,0) );
+		model_transform = mult( model_transform, rotation(-90, 1,0,0) );
+		this.shapes.Pika_rarm.draw( graphics_state, model_transform, this.pikachu );
+		
+
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(1.275,-1.66,.37) );
+		model_transform = mult( model_transform, scale(1.5,1.5,1.5) );
+		this.shapes.Pika_lleg.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(-1.14,-1.9,.37) );
+		model_transform = mult( model_transform, scale(1.5,1.5,1.5) );
+		this.shapes.Pika_rleg.draw( graphics_state, model_transform, this.pikachu );
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, rotation(-5, 1,0,0) );	
+		model_transform = mult( model_transform, translation(1.4,-4,.4) );
+		model_transform = mult( model_transform, scale(.8,.8,.8) );	
+		this.shapes.Pika_lfoot.draw( graphics_state, model_transform, this.pikachu )
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, rotation(-5, 1,0,0) );	
+		model_transform = mult( model_transform, translation(-1.25,-4,.4) );
+		model_transform = mult( model_transform, scale(.8,.8,.8) );	
+		this.shapes.Pika_rfoot.draw( graphics_state, model_transform, this.pikachu )
+		
+		model_transform = temp_center;
+		model_transform = mult( model_transform, translation(-2,2.5,-3) );
+		model_transform = mult( model_transform, rotation(0, 1,0,0) );
+		model_transform = mult( model_transform, scale(2.5,2.5,2.5) );	
+		this.shapes.Pika_tail.draw( graphics_state, model_transform, this.pikachu_tail );
+		}
